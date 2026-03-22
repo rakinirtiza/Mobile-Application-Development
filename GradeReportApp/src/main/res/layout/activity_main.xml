@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Student Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: RAKIN ISRAT IRTIZA"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 22-49535-3"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester: Spring 2026"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department: CSE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Table -->
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="10dp">
+
+            <!-- Header -->
+            <TableRow android:background="#BDBDBD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obtained"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grade"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- GPA -->
+        <TextView
+            android:id="@+id/gpaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="GPA: 0.00"
+            android:textColor="#B71C1C"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Input Section -->
+        <EditText
+            android:id="@+id/subjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Name"/>
+
+        <EditText
+            android:id="@+id/obtainedMarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Obtained Marks"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/totalMarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Marks"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Subject"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Share Report"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
