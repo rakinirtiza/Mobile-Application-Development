@@ -26,7 +26,4 @@ This is a News Article Reader Android application developed using Kotlin. The ap
 
 
 
----
 
-## 📅 Date
-April 2026
