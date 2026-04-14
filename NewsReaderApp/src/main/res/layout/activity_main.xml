@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#6200EE"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="The Daily Reader"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/bookmarkBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:background="@null"
+                android:contentDescription="bookmark"/>
+
+            <ImageButton
+                android:id="@+id/shareBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_share"
+                android:background="@null"
+                android:contentDescription="share"/>
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_banner1"
+                    android:contentDescription="header image"
+                    android:background="#EDE7F6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TECHNOLOGY"
+                    android:background="#03DAC5"
+                    android:padding="6dp"
+                    android:layout_marginTop="8dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next Generation Mobile Apps"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@android:drawable/sym_def_app_icon"
+                        android:contentDescription="author"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" By Rakin Israt Irtiza • April 14, 2026"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DDDDDD"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnIntro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Introduction"/>
+
+                        <Button
+                            android:id="@+id/btnKey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Key Points"/>
+
+                        <Button
+                            android:id="@+id/btnAnalysis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Analysis"/>
+
+                        <Button
+                            android:id="@+id/btnConclusion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Conclusion"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:id="@+id/introSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile applications have become an essential part of modern life, transforming how people communicate, work, and entertain themselves. Over the past decade, the growth of smartphones has led to a massive increase in mobile app usage across the world. From social media platforms to productivity tools, mobile apps are designed to make everyday tasks easier and more efficient. Developers are constantly exploring new technologies such as artificial intelligence, cloud computing, and augmented reality to improve user experience. As a result, mobile apps are becoming smarter, faster, and more personalized than ever before. Businesses are also relying heavily on mobile applications to reach customers and expand their services globally. With continuous innovation and user demand, the future of mobile applications looks promising and full of opportunities for both developers and users.
+"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/keySection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Key Points"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There are several key factors that contribute to the rapid growth of mobile applications. First, the increasing availability of affordable smartphones has made mobile technology accessible to a larger population. Second, app stores such as Google Play Store and Apple App Store provide a platform for developers to distribute their applications worldwide. Another important factor is the improvement in internet connectivity, including the expansion of 4G and 5G networks, which allows apps to function smoothly and efficiently. Additionally, user-friendly design and intuitive interfaces play a crucial role in attracting and retaining users. Security and data privacy have also become major concerns, leading developers to implement stronger protection measures. Finally, regular updates and new features help keep users engaged and satisfied. These key points highlight why mobile applications continue to grow in popularity and importance in today’s digital world.
+"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/analysisSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analysis"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analyzing the current trends in mobile application development reveals a shift towards more intelligent and user-centered solutions. Artificial intelligence and machine learning are being integrated into apps to provide personalized recommendations and automate tasks. For example, many apps now use AI to analyze user behavior and deliver content that matches individual preferences. Another trend is the rise of cross-platform development frameworks, which allow developers to create apps that work on both Android and iOS devices. This approach saves time and reduces development costs. Moreover, cloud-based services enable apps to store and process large amounts of data efficiently. However, there are also challenges such as maintaining app performance, ensuring security, and managing user data responsibly. Despite these challenges, the overall direction of mobile app development is focused on innovation, efficiency, and improved user experience.
+"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/conclusionSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Conclusion"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In conclusion, mobile applications have revolutionized the way people interact with technology and access information. They have become an integral part of daily life, offering convenience, efficiency, and entertainment. The continuous advancement of technology ensures that mobile apps will keep evolving and improving over time. Developers must focus on creating secure, user-friendly, and innovative applications to meet the growing expectations of users. At the same time, businesses should leverage mobile platforms to connect with customers and expand their reach. As new technologies such as artificial intelligence, augmented reality, and the Internet of Things continue to develop, the potential for mobile applications will only increase. Overall, the future of mobile apps is bright, and they will continue to play a vital role in shaping the digital world and enhancing human experiences.
+"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tags:"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AI"
+                            android:backgroundTint="#6200EE"
+                            android:textColor="#ffffff"
+                            android:layout_marginEnd="6dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Technology"
+                            android:backgroundTint="#6200EE"
+                            android:textColor="#ffffff"
+                            android:layout_marginEnd="6dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile"
+                            android:backgroundTint="#6200EE"
+                            android:textColor="#ffffff"
+                            android:layout_marginEnd="6dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apps"
+                            android:backgroundTint="#6200EE"
+                            android:textColor="#ffffff"
+                            android:layout_marginEnd="6dp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Related Articles"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/news1"
+                            android:contentDescription="article1"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AI in Mobile Apps"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/news2"
+                            android:contentDescription="article2"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Android Development"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/news3"
+                            android:contentDescription="article3"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UI/UX Design Trends"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/topBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="↑"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+
+
+</FrameLayout>
