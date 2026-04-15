@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#880E4F"
+        android:padding="6dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:text="◀"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01579B"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnForward"
+            android:text="▶"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01579B"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:text="🔄"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01579B"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnHome"
+            android:text="🏠"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#01579B"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:hint="Enter URL"/>
+
+        <Button
+            android:id="@+id/btnGo"
+            android:text="Go"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#03DAC5"
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="4dp"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnGoogle" android:text="Google"
+                android:backgroundTint="#BB86FC" android:textColor="#fff"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnYoutube" android:text="YouTube"
+                android:backgroundTint="#FF5252" android:textColor="#fff"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnWiki" android:text="Wikipedia"
+                android:backgroundTint="#03A9F4" android:textColor="#fff"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnKhan" android:text="Khan"
+                android:backgroundTint="#4CAF50" android:textColor="#fff"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnUniversity" android:text="Varsity"
+                android:backgroundTint="#FF9800" android:textColor="#fff"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>
