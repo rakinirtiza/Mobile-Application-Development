@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ECommerceApp</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="product_price">$100</string>
+
+    <string name="product_image_desc">Product Image</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="no_products">No products found</string>
+    <string name="search_hint">Search products...</string>
+    <string name="chip_all">All</string>
+    <string name="chip_electronics">Electronics</string>
+    <string name="chip_clothing">Clothing</string>
+    <string name="chip_books">Books</string>
+    <string name="chip_food">Food</string>
+    <string name="chip_toys">Toys</string>
+</resources>

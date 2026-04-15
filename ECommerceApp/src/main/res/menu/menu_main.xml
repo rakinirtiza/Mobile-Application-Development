@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuCart"
+        android:title="Cart"
+        android:icon="@android:drawable/ic_menu_view"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuToggle"
+        android:title="Toggle"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="always"/>
+
+</menu>
